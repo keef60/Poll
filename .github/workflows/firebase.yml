@@ -46,7 +46,7 @@ jobs:
     steps:
      - uses: actions/checkout@v2
      - name: achieve build
-       uses: actions/download-artifactv@2
+       uses: actions/download-artifact@v2
        with:
         name: build
         path: build
