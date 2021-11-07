@@ -36,7 +36,7 @@ jobs:
         uses: action/upload-artifactv@2
         with:
           name: build
-          path: /build
+          path: build
           
         
   deploy:
@@ -49,7 +49,7 @@ jobs:
        uses: action/download-artifactv@2
        with:
         name: build
-        path: /build
+        path: build
      - name: Deploy to Firebase
        uses: w9jds/firebase-action@master
        with:
