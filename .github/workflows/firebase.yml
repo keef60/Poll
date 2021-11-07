@@ -33,7 +33,7 @@ jobs:
           yarn test 
           
       - name: achieve build
-        uses: action/upload-artifactv@2
+        uses: actions/upload-artifactv@2
         with:
           name: build
           path: build
@@ -46,7 +46,7 @@ jobs:
     steps:
      - uses: actions/checkout@v2
      - name: achieve build
-       uses: action/download-artifactv@2
+       uses: actions/download-artifactv@2
        with:
         name: build
         path: build
