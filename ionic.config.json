@@ -1,0 +1,8 @@
+{
+  "name": "schApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
+  

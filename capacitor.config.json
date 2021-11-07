@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "schApp",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}
