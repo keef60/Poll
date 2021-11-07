@@ -33,7 +33,7 @@ jobs:
           yarn test 
           
       - name: achieve build
-        uses: actions/upload-artifactv@2
+        uses: actions/upload-artifact@v2
         with:
           name: build
           path: build
