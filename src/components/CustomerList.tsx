@@ -14,7 +14,6 @@ import { IonContent,
     } from '@ionic/react';
     import React from 'react'
     import './Cust.css'
-    import './src/app.js'
 
     import { pin, wifi, wine, warning, walk,closeCircle,personOutline ,heart, trash, star, archive, ellipsisHorizontal, ellipsisVertical   } from 'ionicons/icons';
 
