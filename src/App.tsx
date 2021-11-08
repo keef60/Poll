@@ -37,7 +37,7 @@ const App: React.FC = () => (
           <Route path="/poll/:name" component={Page} exact />
           <Route path="/account/:name" component={Page} exact />
 
-          <Redirect from="/" to="/orders/create" exact />
+          <Redirect from="/" to="/orders/Create" exact />
         </IonRouterOutlet>
       </IonSplitPane>
     </IonReactRouter>
