@@ -3,6 +3,12 @@
   "integrations": {
     "capacitor": {}
   },
-  "type": "react"
+  "type": "react",
+  "proxies": [
+    {
+      "path": "/test",
+      "proxyUrl": "http://localhost.3001/test"
+    }
+  ]
 }
   
