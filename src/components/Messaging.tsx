@@ -29,7 +29,6 @@ import { IonContent,
     console.log(123567)
 
     const { data,loading } = useFetch("/test")
-    console.log(1234)
     let confirmedList = (data)?data.data.map(
       (el:any)=>{
           
@@ -74,6 +73,7 @@ import { IonContent,
       )
      }):false
    
+     console.log(data)
    
       return(
        <IonGrid>
