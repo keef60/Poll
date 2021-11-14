@@ -6,7 +6,7 @@
   "type": "react",
   "proxies": [
     {
-      "path": "/*",
+      "path": "/test",
       "proxyUrl": "https://poll-project-22167.web.app"
     }
   ]
