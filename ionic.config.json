@@ -3,12 +3,6 @@
   "integrations": {
     "capacitor": {}
   },
-  "type": "react",
-  "proxies": [
-    {
-      "path": "/test",
-      "proxyUrl": "https://poll-project-22167.web.app"
-    }
-  ]
+  "type": "react"
 }
   
