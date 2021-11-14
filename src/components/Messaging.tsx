@@ -26,8 +26,8 @@ import { IonContent,
     }
   
    const Messaging: React.FC = () =>{ 
-    console.log(123567)
 
+    fetch('/test').then(r=>r.json()).then(t => console.log)
     const { data,loading } = useFetch("/test")
     let confirmedList = (data)?data.data.map(
       (el:any)=>{
@@ -73,7 +73,6 @@ import { IonContent,
       )
      }):false
    
-     console.log(data)
    
       return(
        <IonGrid>
