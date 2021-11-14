@@ -33,7 +33,7 @@ import { IonContent,
  const CustomerList : React.FC= ()=>{
 
 
- let { data,loading }= useFetch("/test")
+ let { data,loading }= useFetch("https://poll-project-22167.web.app//test")
  , 
  confirmedList = (data)?data.data.map(
    (el:any)=>{
