@@ -17,8 +17,8 @@ app.use(function(req, res, next) {
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/orders/Customers',testRouter)
-app.use('/customer/Messages',testRouter)
+app.use('https://us-central1-poll-project-22167.cloudfunctions.net/app/orders/Customers',testRouter)
+app.use('https://us-central1-poll-project-22167.cloudfunctions.net/app/customer/Messages',testRouter)
 
 
 exports.app = functions.https.onRequest(app);
