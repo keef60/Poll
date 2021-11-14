@@ -18,5 +18,7 @@ app.use(function(req, res, next) {
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/orders/Customers',testRouter)
+app.use('/customer/Messages',testRouter)
+
 
 exports.app = functions.https.onRequest(app);

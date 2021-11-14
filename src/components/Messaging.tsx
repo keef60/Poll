@@ -27,8 +27,7 @@ import { IonContent,
   
    const Messaging: React.FC = () =>{ 
 
-    fetch('/test').then(r=>r.json()).then(t => console.log).catch(e=>console.log)
-    const { data,loading } = useFetch("/test")
+    const { data,loading } = useFetch("/customer/Messages")
     let confirmedList = (data)?data.data.map(
       (el:any)=>{
           

@@ -12,7 +12,12 @@
         "destination": "/index.html"
       },
       {
-        "source":"/orders/*",
+        "source":"/orders/Customers",
+        "function": "app"
+
+      },
+      {
+        "source":"/customer/Messages",
         "function": "app"
 
       }
