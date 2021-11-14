@@ -27,19 +27,18 @@ import { IonContent,
   
    const Messaging: React.FC = () =>{ 
 
-    fetch('/test').then(r=>r.json()).then(t => console.log)
+    fetch('/test').then(r=>r.json()).then(t => console.log).catch(e=>console.log)
     const { data,loading } = useFetch("/test")
     let confirmedList = (data)?data.data.map(
       (el:any)=>{
           
      return(
        <IonItem>
-           
            <IonItem>
-        <IonAvatar slot="start">
-         <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/>
-       </IonAvatar>
-   <IonLabel>
+              <IonAvatar slot="start">
+                <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/>
+              </IonAvatar>
+          <IonLabel>
          <h2>Finn</h2>
          <h3>I'm a big deal</h3>
          <p>Listen, I've had a pretty messed up day...</p>
