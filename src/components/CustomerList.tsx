@@ -33,7 +33,7 @@ import { IonContent,
  const CustomerList : React.FC= ()=>{
 
 
- let { data,loading }= useFetch("/test")
+ let { data,loading }= useFetch("/orders/Customers")
  , 
  confirmedList = (data)?data.data.map(
    (el:any)=>{

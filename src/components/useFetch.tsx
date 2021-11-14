@@ -10,7 +10,6 @@ function useFetch(url: any) {
     axios
       .get(url)
       .then((response) => {
-console.log(response.data)
         
         setData(response.data);
       })
