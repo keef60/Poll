@@ -26,9 +26,10 @@ import { IonContent,
     }
   
    const Messaging: React.FC = () =>{ 
+    console.log(123567)
 
     const { data,loading } = useFetch("/test")
-    console.log(data)
+    console.log(1234)
     let confirmedList = (data)?data.data.map(
       (el:any)=>{
           
