@@ -87,8 +87,8 @@ const
         padLayout = ["Online", "Pickup", "Table"];
   
       return (
-        <IonRow >
-          <IonCol >
+      <IonRow>
+          <IonCol>
               {keyMaker(padLayout, options, type)}
               </IonCol>
         </IonRow>
