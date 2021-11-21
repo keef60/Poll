@@ -8,7 +8,7 @@ function useFetch(url: any) {
   useEffect(() => {
     setLoading(true); // set loading to true
     axios
-      .get(url)
+      .get('https://us-central1-poll-project-22167.cloudfunctions.net/app'+url)
       .then((response) => {
         
         setData(response.data);

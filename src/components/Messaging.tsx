@@ -27,7 +27,7 @@ import { IonContent,
   
    const Messaging: React.FC = () =>{ 
 
-    const { data,loading } = useFetch("https://us-central1-poll-project-22167.cloudfunctions.net/app/customer/Messages")
+    const { data,loading } = useFetch("/customer/Messages")
     let confirmedList = (data)?data.data.map(
       (el:any)=>{
           
