@@ -21,11 +21,19 @@ import { IonContent,
         return cnt
     } ,
 
-    confirm = ()=>{
-        alert("Confirmed")
+    confirm = (e:any)=>{
+      e.preventDefault();
+      let evt = e.currentTarget.dataset,
+        id = evt.id,
+        type = evt.type;
+        alert(id +" "+type)
     },
-    activate = ()=>{
-        alert("Activated")
+    activate = (e:any)=>{
+      e.preventDefault();
+      let evt = e.currentTarget.dataset,
+        id = evt.id,
+        type = evt.type;
+        alert(id +" "+type)
     }
 
   
