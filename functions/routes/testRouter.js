@@ -26,6 +26,7 @@ router.get('/', function async(req, res, next) {
   })
   .then(user => {
     res.json({data:user});
+    res.set('Cache-Control', 'public, max-age=300, s-maxage=600');
 
   })
   .catch(err => {
