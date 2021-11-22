@@ -1,6 +1,6 @@
 import useFetch from "../components/useFetch";
 import { IonContent, 
-    IonHeader, IonListHeader,
+    IonHeader, IonListHeader,IonSpinner,
     IonPage, 
     IonTitle, 
     IonChip,
@@ -110,7 +110,8 @@ cnt =(data)?data.data.length:0
         </IonChip>
 
       </IonItem>
-             {confirmedList}
+    
+             {(loading)?confirmedList: <IonSpinner name="crescent" />}
              </IonList>
 
              </IonCol>
