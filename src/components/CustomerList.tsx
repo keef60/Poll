@@ -111,7 +111,7 @@ cnt =(data)?data.data.length:0
 
       </IonItem>
     
-             {(loading)?confirmedList: <IonSpinner name="crescent" />}
+             {(data!=null)?confirmedList: <IonSpinner name="crescent" />}
              </IonList>
 
              </IonCol>
