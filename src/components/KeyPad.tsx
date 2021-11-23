@@ -32,7 +32,8 @@ import { IonContent,
     }
     e.preventDefault();
 
-  }, handleKeyPress = (e:any) => {
+  }, 
+  handleKeyPress = (e:any) => {
     let v : any = e ,
       t :any = document.getElementById("pin");
     if (
@@ -49,8 +50,6 @@ import { IonContent,
     }
     e.preventDefault();
   },
-
-
  keyMaker = (padLayout:any, options:any, types:any) => {
     return padLayout.map((i:any) => {
         let sizeOfCol = (i=== "Backspace" ||i=== "Done")?"4":"4",

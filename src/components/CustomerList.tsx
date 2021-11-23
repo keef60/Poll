@@ -58,7 +58,7 @@ import { IonContent,
              </IonCardSubtitle>
             
            </IonCardHeader>
-           <IonButton color="success"  slot="end"  onClick={activate}>
+           <IonButton color="success"  slot="end" data-id={el.id} data-type={el.type}  onClick={activate}>
 Activate    </IonButton>
            </IonItem>
   )
@@ -76,7 +76,7 @@ Activate    </IonButton>
 
             <IonCardSubtitle>{(el.isActive)?"Active":"Closed"}</IonCardSubtitle>
           </IonCardHeader>
-          <IonButton color="danger"  slot="end"  onClick={confirm}>
+          <IonButton color="danger"  slot="end" data-id={el.id} data-type={el.type}  onClick={confirm}>
 Confirm    </IonButton>
           </IonItem>
          
