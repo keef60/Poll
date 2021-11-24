@@ -13,8 +13,7 @@ import { IonContent,
     } from '@ionic/react';
     import React,{useState} from 'react'
     import {close,chevronForwardOutline,chevronBackOutline,chatbubblesOutline,podiumOutline,logOutOutline,    peopleOutline, fileTrayOutline,  settingsOutline } from 'ionicons/icons';
- 
- 
+    import axios from "axios";
  let
  setOrderTypeState = (e:any) => {
     e.preventDefault();
@@ -26,6 +25,22 @@ import { IonContent,
     if (t.value.length <= 3 && v !== "Done" && v !== "Backspace") {
       t.value += v;
     } else if (v === "Done" && t.value.length > 3) {
+alert(123)
+
+      axios
+      .post('/users')
+      .then((response) => {
+        
+        alert(response.data);
+      })
+      .catch((err) => {
+        alert(err);
+      })
+      .finally(() => {
+        alert(false);
+      });
+
+
 
     } else if (v === "Backspace" && t.value.length !== 0) {
       t.value = t.value.slice(0, -1);

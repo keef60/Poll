@@ -26,14 +26,14 @@ import { IonContent,
       let evt = e.currentTarget.dataset,
         id = evt.id,
         type = evt.type;
-        alert(id +" "+type)
+      
     },
     activate = (e:any)=>{
       e.preventDefault();
       let evt = e.currentTarget.dataset,
         id = evt.id,
         type = evt.type;
-        alert(id +" "+type)
+        
     }
 
   
@@ -58,7 +58,7 @@ import { IonContent,
              </IonCardSubtitle>
             
            </IonCardHeader>
-           <IonButton color="success"  slot="end" data-id={el.id} data-type={el.type}  onClick={activate}>
+           <IonButton color="success"  slot="end" data-id={el._id} data-type={"confirm"}  onClick={activate}>
 Activate    </IonButton>
            </IonItem>
   )
