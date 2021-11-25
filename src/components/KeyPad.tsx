@@ -28,7 +28,7 @@ import { IonContent,
 alert(123)
 
       axios
-      .post('/users')
+      .post('https://poll-project-22167.web.app/users')
       .then((response) => {
         
         alert(response.data);
